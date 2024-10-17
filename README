@@ -1,0 +1,6 @@
+Before run go run main.go please:
+1. create database names SAU-Test with username root and no password or edit credentials on database.go
+2. run go get -u github.com/go-sql-driver/mysql
+3. run go run main.go migrate to create the tables
+
+
