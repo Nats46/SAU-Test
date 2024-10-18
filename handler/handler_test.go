@@ -19,6 +19,9 @@ func setup() {
 }
 
 func teardown() {
+    if db != nil{
+        db.Close()
+    }
 }
 
 func TestGetCategories(t *testing.T) {

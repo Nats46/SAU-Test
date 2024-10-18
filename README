@@ -3,4 +3,13 @@ Before run go run main.go please:
 2. run go get -u github.com/go-sql-driver/mysql
 3. run go run main.go migrate to create the tables
 
+To run docker please:
+1. run docker build -t myapp:latest .
+myapp will be your image name
+2. make container with docker run -p 8080:8080 myapp:latest
+you can use any port available like 8000:8080.
+To access docker container use localhost:*local port*
+local port is the first port based on the container
 
+To run Unit Test:
+1. run go test -v
